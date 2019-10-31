@@ -25,6 +25,6 @@ site changes, relevant news, and other interesting bits of gossip.
     
     {{ post['body'] | e}}
     
-    <div class="attribution strapline">posted by {{ post['author'] }} on {{ post['updated'] }}</em> <a href="$post.slug">#</a></div>
+    <div class="attribution strapline">posted by {{ post['author'] }} on {{ post['updated'] }}</em> <a href="{{ post['slug'] }}">#</a></div>
 {% endfor %}
 {% endblock %}
